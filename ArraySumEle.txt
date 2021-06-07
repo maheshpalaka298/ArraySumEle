@@ -1,0 +1,53 @@
+/*To Print Array Elements Sum*/
+import java.util.*;
+class ArraySumEle
+{
+	public static void main(String args[])
+	{
+		int n,i,j=0,k=0;
+        int ele[];
+       
+		Scanner sc=new Scanner(System.in);
+ 
+        System.out.println("Enter the size of the array");
+		n=sc.nextInt();
+
+        ele=new int[n];
+
+        // reading of an array
+        System.out.println("Enter "+n+" elements");
+		for(i=0;i<ele.length;i++)
+			ele[i]=sc.nextInt();
+
+		// displaying of an array
+		System.out.println("The elements in the array are");
+		for(i=0;i<ele.length;i++)
+			System.out.println("Index - "+i+" :"+ele[i]);
+		// sum of all the elements in the given array
+		int sum=0;
+
+		for( i=0;i<ele.length;i++)
+		{
+			    sum=sum+i*ele[i];
+		}
+		System.out.println("The sum is : "+sum);
+	}
+}
+
+//Output//
+Enter the size of the array
+5
+Enter 5 elements
+45
+56
+56
+67
+78
+The elements in the array are
+Index - 0 :45
+Index - 1 :56
+Index - 2 :56
+Index - 3 :67
+Index - 4 :78
+The sum is : 681
+Press any key to continue . . .
